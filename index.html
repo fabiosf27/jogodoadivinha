@@ -1,0 +1,77 @@
+<!DOCtype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--Primeiro  "chamamos" os ficheiros js e css, respetivamente-->
+    <script type="text/javascript" src="jogodaadivinha.js"></script>
+    <link rel="stylesheet" type="text/css" href="jogodaadivinha.css">
+</head>
+
+<body>
+    <center>
+        <!--Alinhamos ao centro do jogo-->
+        <form name="jogoAdivinha">
+            <!--Titulo do Jogo-->
+            <h1>O Jogo do Adivinha</h1>
+            <!-- Cria o div da zona usada para dar informações ao utilizador-->
+            <div id="informacoes">
+                <br>
+                <h2>Área de mensagens:</h2>
+
+                <!-- Cria os diversos elementos da área de mensagens -->
+                <p id="areaMensagens"></p>
+                <!-- Diz ao utilizador se está certo ou errado assim como o intervalo de números... -->
+                <p class="alinhar">Tentativas:</p>
+                <!-- Tentativas -->
+                <p class="alinhar" id="RTentativas"></p>
+                <!-- Apenas mostra o número das tentivas -->
+                <p id="areaDica">
+                    <p>
+                        <!-- Diz ao usuário se o número é maior ou menor -->
+            </div>
+            <div id="entradaDados">
+                <br>
+                <h2>Escreve o teu palpite!</h3>
+                    <!-- Cria uma área de texto em que o utilizador pode escrever o palpite -->
+                    <input type="txt" name="input" size="15" placeholder="Escreve um número" autofocus>
+                    <!-- Cria o botão que quando é clicado executa uma função que verifica os valores introduzidos -->
+                    <input type="button" value="Verificar" onClick="verificarValores()">
+                    <br>
+                    <br>
+                    <!-- Cria os botões que quando são clicados executam a função adicionar -->
+                    <input class="botao" type="button" value="1" onClick="adicionar(1)">
+                    <input class="botao" type="button" value="2" onClick="adicionar(2)">
+                    <input class="botao" type="button" value="3" onClick="adicionar(3)">
+                    <br>
+                    <input class="botao" type="button" value="4" onClick="adicionar(4)">
+                    <input class="botao" type="button" value="5" onClick="adicionar(5)">
+                    <input class="botao" type="button" value="6" onClick="adicionar(6)">
+                    <br>
+                    <input class="botao" type="button" value="7" onClick="adicionar(7)">
+                    <input class="botao" type="button" value="8" onClick="adicionar(8)">
+                    <input class="botao" type="button" value="9" onClick="adicionar(9)">
+                    <br>
+                    <input class="botao" type="button" value="0" onClick="adicionar(0)">
+                    <br>
+                    <br>
+            </div>
+
+            <!-- Executa a função Init() do ficheiro javascript -->
+            <script>
+                setTimeout(Init, 50);
+            </script>
+        </form>
+
+        <!--Este código tem as instruções de como jogar o jogo-->
+        <hr>
+        <h3>Instruções:</h3>
+        1. Seleciona o numero maximo.<br> 2. Clica nos botões com os números ou escreve diretamente<br> 3. Clica em Verificar!<br> 4. Repete os passos 2 e 3 até acertares no número<br>
+        <hr><br>
+
+    </center>
+
+</body>
+
+</html>
+<!--Fim do código-->

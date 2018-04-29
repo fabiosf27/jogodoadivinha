@@ -1,0 +1,11 @@
+/* Com este código estabelecemos a cor do fundo */
+ body {
+    background-color: #FFC0CB;
+}
+/*Agora estabelecemos a cor, tipo de letra, tamanho da letra e a sombra do titulos */
+h1 {
+    color: #DB7093;
+    font-family: verdana;
+    font-size: 300%;
+    text-shadow: 0 0 60px #FFE9EC
+}
